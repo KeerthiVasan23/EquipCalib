@@ -1,0 +1,39 @@
+<doctype html>
+</html>
+<head>
+    <title>Equipment Caliberation</title>
+<link rel="stylesheet" href="/static/main.css">
+    <style>
+button{
+border:none;
+height:100px;
+width:150px;
+color:#fff;
+font-size:20px;
+border-radius:20px
+}
+button:hover{
+cursor:pointer;
+background:#DAA520;
+color:#000}
+.add{
+background-color:#008CBA;}
+.update{
+background-color:#F44336;}
+</style>
+</head>
+<body class="bg-logo">
+<br><br>
+<hr>
+<center><p><pre  style="color:#1D50BD;font-family:Verdana, sans-serif;font-size:30px;font-weight: 600;">E Q U I P M E N T   C A L I B E R A T I O N</pre></p></center>
+<hr><br><br>
+<p><p>
+<div class="ico"><center>
+<pre>
+<a href="{{ url_for('new_instrument') }}"><button class="add" type="button">INSTRUMENT</button></a>             <a href="{{ url_for('new_gauge') }}"><button class="update" type="button">GAUGE</button></a>             
+</pre>
+</center>
+</div>
+
+</body>
+</html>

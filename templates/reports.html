@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Equipment Calibration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Equipment Calibration" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.css') }}" media="all">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}" media="all">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/zoomslider.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/cm-overlay.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/font-awesome.css') }}">
+    <!-- Custom Theme files -->
+
+    <!-- banner slider -->
+
+    <!--gallery -->
+
+    <!-- //gallery -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-2.2.3.min.js') }}"></script>
+     <!-- numscroller -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/numscroller-1.0.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+
+    <!-- font-awesome icons -->
+    <!-- //Custom Theme files -->
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400,500,600,700,800" rel="stylesheet">
+    <!-- //web-fontskkkkkkkkkkkkkkkkkkk -->
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='js/modernizr-2.6.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.zoomslider.min.js') }}"></script>
+    <!-- //banner slider -->
+    <!-- //gallery kkk<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">kkk-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.tools.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.mobile.custom.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.cm-overlay.js') }}"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.cm-overlay').cmOverlay();
+        });
+    </script>
+    <!-- //gallery -->
+    <!-- testimonials -->
+    <!-- required-js-files-->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/owl.carousel.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                items: 1,
+                lazyLoad: true,
+                autoPlay: false,
+                navigation: true,
+                navigationText: true,
+                pagination: true,
+            });
+        });
+    </script>
+    <!--//required-js-files-->
+    <!-- start-smooth-scrolling -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/move-top.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/easing.js') }}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+         var defaults = {
+             containerID: 'toTop', // fading element id
+             containerHoverID: 'toTopHover', // fading element hover id
+             scrollSpeed: 1200,
+             easingType: 'linear' 
+         };
+         */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/SmoothScroll.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+<body>
+<br><br><br><br><br><br><br><br>
+<center>
+         
+                            <div class="col-md-3 col-sm-4 col-xs-4 service_grid text-center">
+                                <div class="serviceinfo_agile ih-item circle colored effect17">
+                                    <div class="img">
+                                        <img src="/static/images/a2.jpg" class="img-responsive" alt="img">
+                                    </div>
+                                    <div class="info">
+                                        <a href="{{ url_for('.view') }}"> <p>due date</p></a>  <!--PENDING -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-xs-4 service_grid text-center">
+                                <div class="serviceinfo_agile ih-item circle colored effect17">
+                                    <div class="img">
+                                        <img src="/static/images/a3.jpg" class="img-responsive" alt="img">
+                                    </div>
+                                    <div class="info">
+                                        <a href="{{ url_for('.history_add') }}"> <p>history</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-xs-4 service_grid text-center">
+                                <div class="serviceinfo_agile ih-item circle colored effect17">
+                                    <div class="img">
+                                        <img src="/static/images/a4.jpg" class="img-responsive" alt="img">
+                                    </div>
+                                    <div class="info">
+                                        <a href="{{ url_for('.view') }}"> <p>master</p></a>
+                                    </div>
+                                </div>
+                            </div>
+               
+
+</center>
+</body>
+
+</html>

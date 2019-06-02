@@ -1,0 +1,103 @@
+<doctype html>
+</html>
+<head>
+<title>New Equipment - Equipment Caliberation</title>
+<link rel="stylesheet" href="/static/main.css">
+    <style>
+button{
+border:none;
+height:50px;
+width:70px;
+color:#fff;
+font-size:18px;
+border-radius:15px
+}
+button:hover{
+cursor:pointer;
+background:#DAA520;
+color:#000}
+.back{
+background-color:#4CAF50;}
+form {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background:#f4f7f8;
+  border-radius: 8px;
+}
+input[type="text"],select{
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 13px;
+  height: 15px;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+input[type="submit"]{
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+input[type="submit"]:hover{
+cursor:pointer;
+background:#DAA520;
+color:#000}
+</style>
+</head>
+<body class="bg-logo">
+<br><br>
+<hr>
+<center><p><pre  style="color:#DAA520;font-family:Verdana, sans-serif;font-size:30px;font-weight: 600;">E Q U I P M E N T   C A L I B E R A T I O N</pre></p></center>
+<hr>
+<center><h3>Update Instrument</h3></center>
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+    <div style="width: 100%; display: table;">
+    <div style="display: table-row">
+        <div style="width: 50%; display: table-cell;">  <dl>
+	{{ render_field(form.itemcode) }}
+        {{ render_field(form.masterref) }}
+        {{ render_field(form.calibby) }}
+        {{ render_field(form.remarks) }}
+	{{ render_field(form.sd1) }}
+        {{ render_field(form.sd2) }}
+	{{ render_field(form.sd3) }} </dl> </div>
+        <div style="display: table-cell;"> <dl>
+	{{ render_field(form.sd4) }}
+        {{ render_field(form.sd5) }}
+        {{ render_field(form.od1) }}
+        {{ render_field(form.od2) }}
+        {{ render_field(form.od3) }}
+        {{ render_field(form.od4) }}
+	{{ render_field(form.od5) }}
+
+	<p><input type=submit value=Submit></p>
+       </dl></div>
+    </div>
+    </div> 
+</form>
+
+<center><a href="{{ url_for('.index') }}"><button class="back" type="button">Back</button></a></center>
+</body>
+</html>

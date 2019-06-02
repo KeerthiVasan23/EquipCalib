@@ -1,0 +1,239 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Equipment Calibration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Equipment Calibration" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.css') }}" media="all">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}" media="all">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/zoomslider.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/cm-overlay.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/font-awesome.css') }}">
+    <!-- Custom Theme files -->
+
+    <!-- banner slider -->
+
+    <!--gallery -->
+
+    <!-- //gallery -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-2.2.3.min.js') }}"></script>
+     <!-- numscroller -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/numscroller-1.0.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+
+    <!-- font-awesome icons -->
+    <!-- //Custom Theme files -->
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400,500,600,700,800" rel="stylesheet">
+    <!-- //web-fontskkkkkkkkkkkkkkkkkkk -->
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='js/modernizr-2.6.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.zoomslider.min.js') }}"></script>
+    <!-- //banner slider -->
+    <!-- //gallery kkk<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">kkk-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.tools.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.mobile.custom.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.cm-overlay.js') }}"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.cm-overlay').cmOverlay();
+        });
+    </script>
+    <!-- //gallery -->
+    <!-- testimonials -->
+    <!-- required-js-files-->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/owl.carousel.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                items: 1,
+                lazyLoad: true,
+                autoPlay: false,
+                navigation: true,
+                navigationText: true,
+                pagination: true,
+            });
+        });
+    </script>
+    <!--//required-js-files-->
+    <!-- start-smooth-scrolling -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/move-top.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/easing.js') }}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+         var defaults = {
+             containerID: 'toTop', // fading element id
+             containerHoverID: 'toTopHover', // fading element hover id
+             scrollSpeed: 1200,
+             easingType: 'linear' 
+         };
+         */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/SmoothScroll.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+
+<body>
+    <!--/banner-bottom-->
+    <div class="w3_agilits_banner_bootm">
+        <!-- header -->
+        <div class="container">
+            <div class="w3_agile_logo">
+                <h1>
+                        <img src="https://www.ksb.com/blueprint/img/temp/ksb-logo.png" alt="" />
+                </h1>
+            </div>
+            <div class="agileits_w3layouts_nav">
+                <div id="toggle_m_nav">
+                    <div id="m_nav_menu" class="m_nav">
+                        <div class="m_nav_ham w3_agileits_ham" id="m_ham_1"></div>
+                        <div class="m_nav_ham" id="m_ham_2"></div>
+                        <div class="m_nav_ham" id="m_ham_3"></div>
+                    </div>
+
+                </div>
+                <div id="m_nav_container" class="m_nav wthree_bg">
+                    <nav class="menu menu--sebastian">
+                        <ul id="m_nav_list" class="m_nav menu__list">
+                            <li class="m_nav_item menu__item menu__item--current" id="m_nav_item_1">
+                                <a href="https://www.ksb.com/ksb-en/" class="menu__link"> Home </a>
+                            </li>
+                            <li class="m_nav_item menu__item" id="moble_nav_item_2">
+                                <a href="https://www.ksb.com/ksb-en/About-KSB/" class="menu__link"> About Us </a>
+                            </li>
+                            <li class="m_nav_item menu__item" id="moble_nav_item_3">
+                                <a href="https://www.ksb.com/ksb-en/Products_and_Services/" class="menu__link">Services</a>
+                            </li>
+                            <li class="m_nav_item menu__item" id="moble_nav_item_4">
+                                <a href="https://www.ksb.com/ksb-in/Press/Press-Photos/gallery-products/93098/" class="menu__link">Gallery</a>
+                            </li>
+                            <li class="m_nav_item menu__item" id="moble_nav_item_5">
+                                <a href="https://www.ksb.com/ksb-in/ksb-in-india/ksb-pumps-ltd/locations-ksb-pumps-ltd/" class="menu__link">Locations</a>
+                            </li>
+                            <li class="m_nav_item menu__item" id="moble_nav_item_6">
+                                <a href="https://www.ksb.com/ksb-en/Press_and_News/" class="menu__link"> Contact </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--// header -->
+        
+    </div>
+    <!--//banner-bottom-->
+    <!--/banner-section-->
+    <div id="demo-1" data-zs-src='["../static/images/b3.jpg","../static/images/b5.jpg","../static/images/b1.jpg","../static/images/b2.jpg","../static/images/b4.jpg"]' data-zs-overlay="dots">
+        <div class="demo-inner-content">
+
+            <!--/banner-info-->
+            <div class="baner-info">
+                <h4>KSB valves division </h4>
+                <h3>
+                    equipment calibration </h3>
+                <p>THE FUTURE OF PUMP TECHNOLOGY </p>
+                <a class="hvr-rectangle-out w3_play_icon1" href="#"> Industry 4.0</a>
+            </div>
+            <!--/banner-ingo-->
+        </div>
+    </div>
+    <!--/banner-section-->
+    <!--about -->
+    <div id="about" class="wthree-about section-w3ls">
+        <div class="container">
+            <div class="agileits-banner-grids text-center">
+                <div class="banner-bottom-girds">
+                    <div class="services_agile" id="services">
+                        <div class="services-top">
+                            <div class="col-md-3 col-sm-4 col-xs-4 service_grid text-center">
+                                <div class="serviceinfo_agile ih-item circle colored effect17">
+                                    <div class="img">
+                                        <img src="/static/images/a1.jpg" class="img-responsive" alt="img">
+                                    </div>
+                                    <div class="info">
+                                        <a href="{{ url_for('.new_add') }}"> <p>add</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-xs-4 service_grid text-center">
+                                <div class="serviceinfo_agile ih-item circle colored effect17">
+                                    <div class="img">
+                                        <img src="/static/images/a2.jpg" class="img-responsive" alt="img">
+                                    </div>
+                                    <div class="info">
+                                        <a href="{{ url_for('.update_add') }}"> <p>update</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-xs-4 service_grid text-center">
+                                <div class="serviceinfo_agile ih-item circle colored effect17">
+                                    <div class="img">
+                                        <img src="/static/images/a3.jpg" class="img-responsive" alt="img">
+                                    </div>
+                                    <div class="info">
+                                        <a href="{{ url_for('.reports') }}"> <p>reports</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <center style="font-color:#000000,font-family:Verdana, sans-serif;font-size:20px;font-weight: 400;">
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+</center>
+</body>
+
+</html>
